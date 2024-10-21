@@ -69,8 +69,9 @@
 
     
     $register = function() use ($add_user, $file_write, $file_load, $sign_in) {
-        $login = $_GET['login'];
-        $password = $_GET['password'];
+        // var_dump($_POST); die;
+        $login = $_POST['login'];
+        $password = $_POST['password'];
         $result = null;        
         if ($login && $password) {
             if ($data = $file_load()) {

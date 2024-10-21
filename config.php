@@ -1,5 +1,6 @@
 <?php
 
+const FOLDER = "post/";
 const FILE_DB = 'file.db';
 const FORM_FILE = 'form.php';
 const SCRIPT_FILE = 'main.php';

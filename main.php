@@ -20,7 +20,7 @@
     <?php endif ?>
     
     <?php if ($auth || $reg || $signin): ?>
-        <form action="<?= FORM_FILE ?>">
+        <form action="<?= FORM_FILE ?>" method="post">
             <?php if ($reg || $signin): ?>
                 <div>
                     <label>
