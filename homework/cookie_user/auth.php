@@ -20,6 +20,7 @@ if ($token && ($data = $file_load())) {
         $cookie_value = serialize(['user_info' => json_encode($user_data)]);
 
         setcookie('user_info', $cookie_value, time() + TIME_EXPIRE, '/');
+
         
         $_COOKIE['user_info'] = json_encode(['login' => array_keys($user)[0], 'age' =>  $user[array_keys($user)[0]]['age']]);
     
